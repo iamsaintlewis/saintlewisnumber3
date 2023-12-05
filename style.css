@@ -1,0 +1,50 @@
+/* Add this CSS to your existing code */
+.header {
+  background-color: black; /* Black background for the header */
+  padding: 20px 0;
+}
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://i.imgur.com/9vkp1Qg.jpg'); /* Background Image URL */
+  background-size: cover;
+  background-position: center;
+  color: white; /* Default text color */
+  position: relative;
+  background-color: black; /* Set a black background for the body */
+}
+
+
+.albums {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  justify-content: center; /* Horizontally centers the grid */
+  margin: 0 -10px; /* Negative margin to extend to the edges */
+  text-align: center; /* Centers the content inside each album container */
+}
+
+.album {
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.2); /* Example background color */
+}
+
+.albums {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive columns */
+  gap: 10px;
+  justify-content: center;
+  margin: 0; /* Remove negative margin */
+  text-align: center;
+}
+
